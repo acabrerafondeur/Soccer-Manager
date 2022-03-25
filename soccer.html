@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Soccer Manager</title>
+      
+      <style>
+         body{
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         }
+         h1{
+         display:block;
+         }
+         table{
+         width:70%;
+         border-collapse: collapse;
+         }
+         td,th{
+         border: 1px solid #ddd;
+         padding: 8px;
+         text-align: center;
+         }
+         th{
+         padding-top: 12px;
+         padding-bottom: 12px;
+         }
+         tr:nth-child(even){background-color: #f2f2f2;}
+         input{
+         border: 1px solid #ddd;
+         padding: 12px;
+         margin:20px;
+         text-align:center;
+         }
+         button{
+         background-color: #4CAF50;
+         border: none;
+         border-radius:10px;
+         color: white;
+         padding: 12px;
+         text-align: center;
+         font-weight:bold;
+         display: inline-block;
+         margin: 4px 2px ;
+         cursor: pointer;
+         }
+      </style>
+   </head>
+   <body>
+      
+      <center>
+         <h1>
+            Soccer Manager
+         </h1>
+         <div>
+           
+            <table>
+               <tr>
+                  <th>Total Children</th>
+                  <td id="total">0</td>
+               </tr>
+               <tr>
+                  <th>Junior</th>
+                  <td id="junior">0</td>
+               </tr>
+               <tr>
+                  <th>Intermediate</th>
+                  <td id="intermediate">0</td>
+               </tr>
+               <tr>
+                  <th>Senior</th>
+                  <td id="senior">0</td>
+               </tr>
+            </table>
+            <input type="number" placeholder="Enter age" id="age">
+            <button onclick="addAge()">Add</button>
+         </div>
+      </center>
+      <script type="text/javascript">
+         function addAge(){
+           // gets the input age
+           var age = Number(document.getElementById("age").value);
+
+           // clears the input field
+           document.getElementById("age").value = "";
+
+           // checks if age is between 4 and 15
+           if(age>=4&&age<=15){
+           // table cell to display total number of children
+           var total = document.getElementById("total");
+
+           // table cell to display total number of junior
+           var junior = document.getElementById("junior");
+
+           // table cell to display total number of intermediate
+           var intermediate = document.getElementById("intermediate");
+
+           // table cell to display total number of senior
+           var senior = document.getElementById("senior");
+
+           // increase total number of children by 1
+           total.innerHTML = Number(total.innerHTML) + 1;
+
+           // if its a junior age
+           if(age<=7)
+
+           // increase total number of junior by 1
+           junior.innerHTML = Number(junior.innerHTML) + 1;
+
+           // if its a intermediate age
+           else if(age<=11)
+
+           // increase total number of intermediate by 1
+           intermediate.innerHTML = Number(intermediate.innerHTML) + 1;
+
+           // else it will be a senior age
+           else
+
+           // increase total number of senior by 1
+           senior.innerHTML = Number(senior.innerHTML) + 1;
+
+           }
+           // if age is not between 4 and 15 alert an error
+           else{
+             alert("Age should be between 4 and 15");
+           }
+         }
+      </script>
+   </body>
+</html>
