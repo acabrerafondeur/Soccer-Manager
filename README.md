@@ -4,7 +4,7 @@ Soccer Manager is a simple web-based application that helps you manage and track
 
 ## Screenshots
 
-(https://github.com/acabrerafondeur/Soccer-Manager/assets/47997094/456c931c-0946-4451-837b-069e88387072)
+![image](https://github.com/acabrerafondeur/Soccer-Manager/assets/47997094/456c931c-0946-4451-837b-069e88387072)
 
 ## Demo
 
