@@ -8,7 +8,7 @@ Soccer Manager is a simple web-based application that helps you manage and track
 
 ## Demo
 
-A live demo of Soccer Manager can be found https://codepen.io/amcodes/full/dyQZBeJ.
+A live demo of Soccer Manager can be found https://codepen.io/amcodes/full/dyQZBeJ. 
 
 ## Features
 
